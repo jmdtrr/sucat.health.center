@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.png" alt="logo" class="logo"> 
+            <h1 class="head1">Sucat Clinic Center</h1>
+            
+            <img src="img/logo2.png" alt="logo2" class="logo2"> 
+
+        </header>
+        
+        <nav>
+            <ul class="navbar">
+                <li><a id="Home" href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <a href="#about" class="dropbtn">About</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#mission">Mission</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <main>
+
+            
+            <section id="appointment" class="form-section">
+                <h2>Book an Appointment</h2>
+                <form>
+                    <label for="appointment-name">Full Name:</label>
+                    <input type="text" id="appointment-name" required>
+                    
+                    <label for="appointment-email">Email:</label>
+                    <input type="email" id="appointment-email" required>
+                    
+                    <label for="appointment-date">Preferred Date:</label>
+                    <input type="date" id="appointment-date" required>
+
+                    <label for="appointment-type">Appointment Type:</label>
+                    <select type="options" id="appointment-date" required>
+                        <option value="option1">Vaccine</option>
+                        <option value="option2">Dental</option>
+                        <option value="option3">Laboratory</option>
+                        <option value="option4">Check-up</option>
+
+                    </select>
+                    <label for="appointment-time">Preferred Time:</label>
+                    <input type="time" id="appointment-time" required>
+                    
+                    <label for="appointment-reason">Reason for Visit:</label>
+                    <textarea id="appointment-reason" required></textarea>
+                    
+                    <button type="submit" class="buttonAppointment">Book Appointment</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 Our Clinic. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
