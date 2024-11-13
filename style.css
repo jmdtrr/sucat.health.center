@@ -3,10 +3,6 @@
     margin: 0;
     padding: 0;
 }
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-image: url('img/bg1.jpeg');
     background-size: cover;
@@ -14,11 +10,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
+
 
 .container {
     background-color: rgba(255, 255, 255, 0.8); 
@@ -193,7 +190,7 @@ button {
 }
 
 button:hover {
-    background-color: red;
+    background-color: yellowgreen;
 }
 
 footer {
@@ -358,6 +355,13 @@ section ul li {
     max-width: 600px;
 }
 
-.introduction-image {
-    margin-right: 120px; /* Adjust the value as needed */
+
+.outlined-text {
+    color: white; 
+    text-shadow: 
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
 }
+
