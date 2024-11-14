@@ -21,7 +21,7 @@
         <nav class="bg-success border border-dark rounded-end">
             <ul class="d-flex flex-row justify-content-center align-items-center gap-3 navbar bg-success text-center p-2 m-0">
                 <button class="btn btn-outline-warning outlined-text"><li><a id="Home" href="home.html">Home</a></li></button>
-                <button class="btn btn-outline-warning outlined-text"><li><a href="login.html">Login</a></li></button>
+                <button class="btn btn-outline-warning outline  d-text"><li><a href="logintype.html">Login</a></li></button>
                 
             </ul>
         </nav>
@@ -30,32 +30,32 @@
     
             <section id="register" class="form-section">
                 <h2>Register</h2>
-                <form action="htdocs/register.php" method="POST">
+                <form action="register.php" method="POST">
                     <label for="register-name">Full Name:</label>
-                    <input type="text" id="register-name" required>
+                    <input type="text" id="register-name" name="name" required>
                     <br>
                     <label for="register-email">Email:</label>
-                    <input type="email" id="register-email" required>
+                    <input type="email" id="register-email" name="email" required>
                     <br>
-                    <label for="registe-age">Age:</label>
-                    <input type="number" id="register-password" required>
+                    <label for="register-age">Age:</label>
+                    <input type="number" id="register-age" name="age" required>
                     <br>
                     <label for="register-birthdate">Birthdate:</label>
-                    <input type="date" id="birthdate" required>
+                    <input type="date" id="register-birthdate" name="birthdate" required>
                     <br>
                     <label for="register-address">Address:</label>
-                    <textarea id="register-address" rows="4" required></textarea>
+                    <textarea id="register-address" name="address" rows="4" required></textarea>
                     <br>
                     <label for="register-contact">Contact Number:</label>
                     <div class="input-group">
                         <span class="input-group-text">+63</span>
-                        <input type="tel" id="register-contact" name="register-contact" pattern="[0-9]{10}" placeholder="Enter your 10-digit number" required>
+                        <input type="tel" id="register-contact" name="contact" pattern="[0-9]{10}" placeholder="Enter your 10-digit number" required>
                     </div>
                     
                     <button type="submit" class="buttonRegister">Register</button>
                 </form>
             </section>
-        
+            
         </main>
         
         <footer class="text-center py-3">
