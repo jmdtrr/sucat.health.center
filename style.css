@@ -365,3 +365,11 @@ section ul li {
          1px  1px 0 black;
 }
 
+.table-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#patients{
+    letter-spacing: 5px;
+}
