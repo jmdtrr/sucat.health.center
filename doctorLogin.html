@@ -29,13 +29,13 @@
         <main>
             <section id="login" class="form-section">
                 <h2>Login</h2>
-                <form>
-                    <label for="clinicNum">Doctor ID:</label>
-                    <input id="clinic-num" placeholder="Enter your ID Number" required> 
+                <form action="doctorLogin.php" method="post">
+                    <label for="doctorID">Doctor ID:</label>
+                    <input type="number" id="doctorID" name="doctorID" placeholder="Enter your ID Number" required> 
                     <br>
-                    <label for="full-name">Name:</label>
-                    <input type="text" id="full-name" placeholder="Enter your Full Name" required>                
-                    <button id="loginButton" type="submit" class="buttonLogin" onclick="goToDashboard()">Login</button>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your Full Name" required>                
+                    <button id="loginButton" type="submit" class="buttonLogin">Login</button>
                     <button id="registerButton" type="submit" class="buttonRegister" onclick="goToDoctorRegister()">Register</button>
                 </form>
             </section>
